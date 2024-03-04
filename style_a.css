@@ -1,0 +1,142 @@
+.wrapper
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.wrapper>*
+{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border: 1px solid azure;
+    border-radius: 0%;
+    
+}
+/* The image size for Title */
+.header h1 img
+{
+    width: clamp(40px, 8vw + 1rem, 95px);
+    
+}
+/* header overall layout of the flexbox */
+.header
+{
+    background: rgb(138, 1, 1);
+    font-family: 'Algeria', sans-serif;
+    border: none;
+    justify-content: center;
+  
+    
+    
+}
+/* Style for the title */
+.header h1
+{
+    font-size: clamp(50px, 12vw + 1rem, 130px);
+    padding: -50px 0;
+    text-align: center;
+    background-color: transparent;
+   
+}
+/* Link for title color.  */
+.header h1 a 
+{
+    color: whitesmoke;
+    background-color: transparent;
+    
+    
+}
+.header h1 a:visited 
+{
+ color: whitesmoke;
+ background-color: transparent;
+}
+.header, .nav
+{
+    margin: 0;
+
+}
+.nav
+{
+    background: rgb(138, 1, 1);
+    border-left: none;
+    border-right: none;
+    position: sticky;
+    top: 0;
+
+}
+.nav {
+    opacity: 0.9; /* Set opacity for the nav element */
+}
+
+
+.footer
+{
+    background: rgb(138, 1, 1);
+    text-align: center;
+ 
+}
+
+
+
+.main
+{
+    text-align: center;
+    padding: 180px 0;
+    background: rgb(138, 1, 1);
+    font-size: 24px;
+}
+
+.aside1
+{
+    background: rgb(138, 1, 1);
+    
+   
+}
+
+.aside2
+{
+    background: rgb(138, 1, 1);
+}
+
+@media all and (min-width: 800px)
+{
+    .main
+    {
+        flex: 3;
+    }
+    
+    .nav
+    {
+        order: 1;
+    }
+
+    .aside1
+    {
+        order: 2;
+    }
+
+    .aside2
+    {
+        order: 3;
+    }
+
+    .main
+    {
+        order: 3;
+    }
+
+    .footer
+    {
+        order: 5;
+    }
+}
+
+@media all and (min-width: 600px)
+{
+    .aside
+    {
+        flex: 1;
+    }
+}

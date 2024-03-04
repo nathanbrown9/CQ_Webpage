@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style_a.css">
+    <link href="https://fonts.cdnfonts.com/css/algeria" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/witcher-knight" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/supernova-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/dhaksinarga" rel="stylesheet">
+
+    <script src="resizing.js"></script>
+                
+                                
+    <style>
+         @import url('https://fonts.cdnfonts.com/css/algeria');
+         @import url('https://fonts.cdnfonts.com/css/witcher-knight');
+         @import url('https://fonts.cdnfonts.com/css/supernova-2');
+         @import url('https://fonts.cdnfonts.com/css/dhaksinarga');
+
+         body
+         {
+            background-color: rgb(138, 1, 1);
+            color: azure;
+         }
+         .nav
+        {
+            font-style: italic;
+            font-weight: bold;   
+        }
+        ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                
+            }
+
+        li {
+                float: left;
+            }
+
+        li a {
+                display: block;
+                color: azure;
+                text-align: center;
+                padding: 12px 12px;
+                text-decoration: none;
+            }
+        li a.active
+        {
+            background-color: rgb(192, 23, 23);
+            color: white
+        }
+        /* Individual background colors on the navigation */
+        #NEWS a:hover
+        {
+          
+          background-color: rgb(227, 159, 170);
+        }
+        #Games a:hover
+        {
+            background-color: rgb(9, 92, 9);
+        }
+        #About a:hover
+        {
+            background-color: RED; 
+        }
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+                background-color: #111;
+                }
+        li {
+            border-right: 1px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+       
+        <header class="header">
+            <h1><a href="home.html"><img src= "kramo_bone_white.png">CONQUEST<img src="kramo_bone_white.png"></a></h1>
+        </header>
+        <nav class="nav">
+            <div class="list">
+            <ul>
+                <li id="Home"><a href="home.html">Home</a></li>
+                <li id="NEWS"><a href="news.html">ConQuest News</a></li>
+                <li id="Games"><a href="games.html">Games</a></li>
+                <li id="About" style="float:left"><a class="active" href="about.html">About</a></li>
+            </ul>
+         </div>
+        </nav>
+       
+        <article class="main">
+           You wanna know what we're about?<br>
+           We're about blowing loud on the block sporty.<br>
+           Glock 40 in the competitions mouth.<br><br>
+           Trio From Earth<br>
+           ConQuest Visions.
+        </article>
+        <aside class="aside aside1">
+           <h1> </h1>
+        </aside>
+        <aside class="aside aside2">
+            <h1></h1>
+        </aside>
+        <footer class="footer">
+            <h1>JDK CNQST</h1>
+            <h2>©2024</h2>
+        </footer>
+
+    </div>
+</body>
+</html>

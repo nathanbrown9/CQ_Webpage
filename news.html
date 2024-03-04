@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style_n.css">
+    <link href="https://fonts.cdnfonts.com/css/algeria" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/witcher-knight" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/supernova-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/dhaksinarga" rel="stylesheet">
+
+    <script src="resizing.js"></script>
+                
+                                
+    <style>
+         @import url('https://fonts.cdnfonts.com/css/algeria');
+         @import url('https://fonts.cdnfonts.com/css/witcher-knight');
+         @import url('https://fonts.cdnfonts.com/css/supernova-2');
+         @import url('https://fonts.cdnfonts.com/css/dhaksinarga');
+
+         .header img 
+        {
+    /* Apply CSS animation to the image */
+            animation: rotateImage 1.2s linear, glowImage 2s ease-out 2s forwards;
+            
+        }
+
+        .glow 
+        {
+            color: #fff;
+            text-align: center;
+            -webkit-animation: glow 1.7s ease-in-out;
+            -moz-animation: glow 1.7s ease-in-out;
+            animation: glow 1.7s ease-in-out ;
+        }
+    /* This controls the glow of the text and image in title*/
+    
+        @keyframes glow 
+        {
+            0%
+            {
+                filter: drop-shadow(0 0 10px rgba(255,255,255, 0.2));
+            }
+            25%
+            {
+                filter: drop-shadow(0 0 20px rgba(255,255,255, 0.5));   
+            }
+            50%
+            {
+                filter: drop-shadow(0 0 30px rgba(255,255,255, 0.9)); 
+            }
+            100%
+            {
+                filter: drop-shadow(0 0 80px rgba(255,255,255, 2));
+            }
+        }
+
+    
+
+/* This rotates the kramo bone image in the title */
+        @keyframes rotateImage 
+        {
+            0% 
+            {
+                transform: rotate(0deg); /* Start rotation from 0 degrees */
+            }
+            
+            100% 
+            {
+                transform: rotate(1800deg); /* End rotation after 5 spins */
+                
+            }
+            
+        }
+        /* The color of the body of the page*/
+        body
+         {
+            background-color: rgb(227, 159, 170);
+            color: azure;
+            
+         }
+         .nav
+        {
+            font-style: italic;
+            font-weight: bold;   
+        }
+        /* Style of the dropdown list for both menus*/
+        .list ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                
+            }
+
+        .list li {
+                float: left;
+            }
+
+        .list li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 12px 12px;
+                text-decoration: none;
+            }
+            
+        /* Individual background colors on the navigation */
+        #NEWS a:hover
+        {
+        
+          background-color: rgb(227, 159, 170);
+        }
+        #Contact a:hover
+        {
+            background-color: rgb(9, 92, 9);
+        }
+        #About a:hover
+        {
+            
+            background-color: red;  
+        }
+        li a.first
+        {
+            background-color: rgb(235, 128, 147);
+            color: white;
+        }
+        
+        /* Change the link color to #111 (black) on hover */
+        .list li a:hover {
+                background-color: #111;
+                }
+        .list li {
+            border-right: 1px solid #bbb;
+        }
+
+        .list li:last-child {
+            border-right: none;
+        }
+
+       
+       .link_booth ul 
+       {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            align-items: center;
+        }   
+
+        .link_booth li a 
+        {
+            display: block;
+            height: 50px;
+            padding: 25px 0;
+            border: 1px solid rgb(227, 159, 170);;
+            color: rgb(227, 159, 170);
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        /* Change the link color on hover */
+        .link_booth li a:hover 
+        {
+        background-color: #555;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+       
+        <header class="header">
+            <div class="glow">
+            <h1><a href="home.html"><img src= "kramo_bone_white.png" class="glow-image">CONQUEST<img src="kramo_bone_white.png" class="glow-image"></a></h1>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="list">
+            <ul>
+                <li id="Home"><a href="home.html">Home</a></li>
+                <li id="NEWS"><a class="first" href="news.html">ConQuest News</a></li>
+                <li id="Games"><a class ="active" href="games.html">Games</a></li>
+                <li id="About" style="float:left"><a class="fourth" href="about.html">About</a></li>
+            </ul>
+         </div>
+        </nav>
+       
+        <article class="main">
+            New Merch Coming Soon. <br>
+            New Songs Dropping This Summer.<br>
+            Incoming Videos.<br>
+            Performances This Winter.<br>
+            Website like we're Disney Channel.
+        </article>
+
+        <aside class="aside aside1">
+            <h1>EXPLORE</h1>
+            <div class="link_booth">
+            <ul>
+                <li id="Apple Music"><a href="https://music.apple.com/us/artist/conquest/1633902534" target="_blank">ConQuest Apple</a></li>
+                <li id="Soundcloud"><a href="https://soundcloud.com/conquest-management?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank"> ConQuest Soundcloud</a></li>
+                <li id="Instagram"><a href="https://www.instagram.com/conquxst/" target="_blank">ConQuest Instagram</a></li>
+                
+            </ul>
+            </div>
+        </aside>
+        <aside class="aside aside2">
+            <h1>ConTacts</h1>
+            <div class="link_booth">
+            <ul>
+                <li id="Kylo"><a href="https://www.instagram.com/kylosgenesis/" target="_blank">Kylo ConQuests</a></li>
+                <li id="Dame"><a href="https://www.instagram.com/cq.damien/" target="_blank">Dame ConQuests</a></li>
+                <li id="Jon"><a href= "https://www.instagram.com/cq_jon/" target="_blank>">Jon ConQuests</a></li>
+            </ul>
+            </div>
+        </aside>
+        <footer class="footer">
+            <h1>JDK CNQST</h1>
+            <h2>©2024</h2>
+        </footer>
+
+    </div>
+</body>
+</html>
