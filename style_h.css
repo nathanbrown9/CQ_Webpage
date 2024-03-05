@@ -16,7 +16,7 @@
 /* The image size for Title */
 .header h1 img
 {
-    width: clamp(40px, 8vw + 1rem, 95px);
+    width: clamp(10px, 7vw + 1rem, 95px);
     
     
 }
@@ -33,7 +33,7 @@
 /* Style for the title */
 .header h1
 {
-    font-size: clamp(50px, 12vw + 1rem, 130px);
+    font-size: clamp(15px, 9vw + 1rem, 130px);
     padding: -50px 0;
     text-align: center;
     background-color: transparent;
